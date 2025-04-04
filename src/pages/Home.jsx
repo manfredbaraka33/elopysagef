@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
-import logo "/logos-removebg-preview.png"
+const logo = "/logos-removebg-preview.png";
+
 
 const Home = () => {
 
