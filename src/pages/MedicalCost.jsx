@@ -106,7 +106,10 @@ const handleSubmit2 = async (e) => {
         <div className="col"></div>
         <div className="col-lg-3 col-sm-10 my-2">
            
-          <center>
+          
+           </div>
+      </div>
+      <center>
           {charges && (
                 <div className='mt-4'>
                    <h4 className='my-3'> Predicted Charges </h4>
@@ -116,8 +119,6 @@ const handleSubmit2 = async (e) => {
                 </div>
             )}
           </center>
-           </div>
-      </div>
 
       </form>
           </div>
