@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
 
   return (
-    <div className='container mt-5 p-5'>
+    <div className='container mt-5 p-5  text-light'>
 
       <center><h2>Welcome to <span className='text-primary'>E</span>lopy<span className='text-warning'>S</span>age AI models</h2></center>
 
