@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 const EnergyConsumption = () => {
 
-    const [building,setBuilding]=useState(0);
+    const [building,setBuilding]=useState(0);   
     const [area,setArea]=useState(0);
     const [people,setPeople]=useState(0);
     const [appliances,setAppliances]=useState(0);
