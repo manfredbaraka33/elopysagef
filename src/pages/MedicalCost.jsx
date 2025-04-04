@@ -31,7 +31,7 @@ const handleSubmit2 = async (e) => {
   formData.append("currency", currency);
 
   try {
-    const response = await axios.post('http://localhost:8000/charges_prediction/',formData);
+    const response = await axios.post('https://elopyx-elopysage.hf.space/charges_prediction/',formData);
     console.log(response);
     setCharges(response.data)
   } catch (error) {
@@ -47,22 +47,22 @@ const handleSubmit2 = async (e) => {
     <div className="container p-3 mt-4">
       <h5 className='text-warning mt-3'>Medical cost prediction</h5>
     <form className='' onSubmit={handleSubmit2} p-3>
-
+         <br/>
         <label  htmlFor="age">Age: </label>
         <input className='form-control m-1' type="number" id='age' min="0" value={age} onChange={(e)=>setAge(e.target.value)} />
-
+        <br/>
         <label  htmlFor="sex">Gender: </label>
         <select className='form-control m-1' name="sex" id="sex" value={sex} onChange={(e)=>setSex(e.target.value)}>
           <option value="1">Male</option>
           <option value="0">Female</option>
         </select>
-
+         <br/>
         <label  htmlFor="bmi">Body Mass Index(BMI): </label>
         <input className='form-control m-1' type="number" id='bmi' min="15" max="60" value={bmi} onChange={(e)=>setBMI(e.target.value)}  />
-
+          <br/>
         <label htmlFor="children">Children: </label>
         <input className='form-control m-1' type="number" id='children' min="0" value={children} onChange={(e)=>setChildren(e.target.value)}  />
-
+           <br/>
         <label  htmlFor="region">Region: </label>
         <select className='form-control m-1' name="region" id="region" value={region} onChange={(e)=>setRegion(e.target.value)}>
           <option value="0">North East</option>
@@ -71,7 +71,7 @@ const handleSubmit2 = async (e) => {
           <option value="3">South West</option>
         </select>
 
-
+           <br/>
         <label  htmlFor="smoker">Smoker: </label>
         <select className='form-control m-1' name="smoker" id="smoker" value={smoker} onChange={(e)=>setSmoker(e.target.value)}>
           <option value="0">Not a Smoker</option>
