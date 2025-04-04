@@ -26,7 +26,7 @@ const EnergyConsumption = () => {
         formData.append("currency", currency);
     
         try {
-            const resp = await fetch("http://localhost:8000/energy_consumption/", {
+            const resp = await fetch("https://elopyx-elopysage.hf.space/energy_consumption/", {
                 method: "POST",
                 body: formData,
             });
