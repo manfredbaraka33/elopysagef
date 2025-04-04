@@ -53,6 +53,7 @@ const handleSubmit2 = async (e) => {
         <br/>
         <label  htmlFor="sex">Gender: </label>
         <select className='form-control m-1' name="sex" id="sex" value={sex} onChange={(e)=>setSex(e.target.value)}>
+          <option >Click here to select gender</option>
           <option value="1">Male</option>
           <option value="0">Female</option>
         </select>
@@ -65,6 +66,7 @@ const handleSubmit2 = async (e) => {
            <br/>
         <label  htmlFor="region">Region: </label>
         <select className='form-control m-1' name="region" id="region" value={region} onChange={(e)=>setRegion(e.target.value)}>
+          <option >Click here to select region</option>
           <option value="0">North East</option>
           <option value="1">North West</option>
           <option value="2">South East</option>
@@ -74,6 +76,7 @@ const handleSubmit2 = async (e) => {
            <br/>
         <label  htmlFor="smoker">Smoker: </label>
         <select className='form-control m-1' name="smoker" id="smoker" value={smoker} onChange={(e)=>setSmoker(e.target.value)}>
+          <option >Click here to select smoking status</option>
           <option value="0">Not a Smoker</option>
           <option value="1">Smoker</option>
         </select>
